@@ -333,12 +333,12 @@ public class DataType {
 
 
     public static void main(String[] args){
-//        printString();
-//        printStringBuffer();
-//        printArr();
-//        printList();
-//        printMap();
-//        printSet();
+        printString();
+        printStringBuffer();
+        printArr();
+        printList();
+        printMap();
+        printSet();
         changeDataType();
     }
 
