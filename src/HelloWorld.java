@@ -21,7 +21,7 @@ public class HelloWorld {
         // private : 변수, 메서드, 클래스에서 사용 가능 하며, 해당 클래서에서만 접근이 가능하다.
         // default: 해당 패키지 내에서만 접근이 가능하다. (아무것도 안썼을 경우)
         // protected: 동일 패키지의 클래스, 해당 클래스를 상속받은 다른 패키지의 클래스에서만 접근이 가능하다.
-        // public: 어떤 클래스에서라도 접근이 가능하다.
+        // public: 어떤 클래스에서라도 접근이 가능하다. (다른 패키지에서도 접근 가능)
 
         private DataType secret;
         private DataType getSecret(){
