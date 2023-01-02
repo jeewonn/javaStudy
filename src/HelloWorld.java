@@ -23,13 +23,19 @@ public class HelloWorld {
         // protected: 동일 패키지의 클래스, 해당 클래스를 상속받은 다른 패키지의 클래스에서만 접근이 가능하다.
         // public: 어떤 클래스에서라도 접근이 가능하다. (다른 패키지에서도 접근 가능)
 
+        /*
+        private : 해당 클래스에서만 접근이 가능.
+        default: 해당 패키지 내에서만 접근이 가능.
+        protected: 동일 패키지의 클래스, 해당 클래스를 상속받은 다른 패키지의 클래스에서만 접근이 가능하다.
+        public: 모든 클래스에서 접근 가능. (다른 패키지에서도 접근 가능)
+         */
+
         private DataType secret;
         private DataType getSecret(){
             return this.secret;
         }
 
     }
-
 
 
 }

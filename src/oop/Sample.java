@@ -1,5 +1,8 @@
 package oop;
 
+// 이런식으로 패키지안에있는 클래스를 import 할 수 있다.
+import datatype.DataType;
+
 class Animal {
     // 객체 변수: 클래스에 선언한 변수 (인스턴스 변수, 멤버 변수, 속성)
     String name;
