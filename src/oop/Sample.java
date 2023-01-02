@@ -24,6 +24,16 @@ public class Sample {
     }
 
     public static void main(String[] args){
+
+        /*
+        객체와 인스턴스
+
+        객체 == 인스턴스
+
+        인스턴스라는 말은 특정 객체(cat)가 어떤 클래스(Animal)의 객체인지를 관계위주로 설명할 때 사용된다
+
+         */
+
         Animal cat = new Animal();
 
         // 객체 변수에 접근 하는 방법

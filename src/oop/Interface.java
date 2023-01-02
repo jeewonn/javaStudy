@@ -2,7 +2,13 @@ package oop;
 
 // 인터페이스는 클래스처럼 단독파일로 저장하는것이 일반적인 방법
 interface Predator{
-    // 인터페이스에서 구현한 메서드는 implements한 클래스들이 구현 해야 한다.
+    /*
+     - 인터페이스에서 구현한 메서드는 implements한 클래스들이 구현 해야 한다.
+     - 인터페이스는 규칙이다. 인터페이스를 implements한 클래스들이 구현해야만 하는 것이다.
+     - 인터페이스는 인터페이스의 메서드를 반드시 구현해야 하는 강제성을 지닌다.
+
+     */
+
     String getFood();
 
     /*
@@ -46,7 +52,7 @@ class Tiger extends Animal implements Predator, Barkable{
     // 인터페이스의 메서드는 항상 public 으로 구현해야 한다.
     public String getFood() {
         return "apple";
-    }
+    } // 인터페이스의 메서드임으로 반드시 구현해야 하는 강제성을 띈다.
 
     public void bark() {
         System.out.println("어흥");
@@ -112,10 +118,7 @@ class Bouncer{
 
 public class Interface {
 
-    // ZoomKeeper 클래스가 동물들의 종류에 의존적인 클래스에서 동물들의 종류와 상관없는 독립적인 클래스가 되었음.
-
-    // 인터페이스는 인터페이스의 메서드를 반드시 수현해야 하는 강제성을 지닌다.
-
+    // zooKeeper 클래스가 동물들의 종류에 의존적인 클래스에서 동물들의 종류와 상관없는 독립적인 클래스가 되었음.
 
     public static void main(String[] args){
         ZooKeeper zooKeeper = new ZooKeeper();

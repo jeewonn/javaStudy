@@ -10,17 +10,23 @@ class Dog extends Animal{
 }
 
 class HouseDog extends Dog{
-    void sleep(){
-        /*
-        - 메서드 오버라이딩 (method overriding)
 
-        Dog 클래스와 동일한 형태의 sleep 메서드를 구현하면
-        HouseDog 클래스의 sleep 메서드가 Dog 클래스의 sleep 메서드보다 더 높은 우선순위를 갖게 됨.
-        => HouseDog 의 sleep() 메서드가 실행 됨.
-
-         */
+    @Override
+    void sleep() {
         System.out.println(this.name + " zzz in house");
     }
+
+//    void sleep(){
+//        /*
+//        - 메서드 오버라이딩 (method overriding)
+//
+//        Dog 클래스와 동일한 형태의 sleep 메서드를 구현하면
+//        HouseDog 클래스의 sleep 메서드가 Dog 클래스의 sleep 메서드보다 더 높은 우선순위를 갖게 됨.
+//        => HouseDog 의 sleep() 메서드가 실행 됨.
+//
+//         */
+//        System.out.println(this.name + " zzz in house");
+//    }
 
 
     void sleep(int hour){
